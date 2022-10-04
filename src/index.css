@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root {
+  --primary: #393E46;
+  --secondary: #CBF1F5  ;
+  --light: #EEEEEE;
+  --disabled: #4C6793;
+  --dark: #222831;
+
+
+  color-scheme: light dark;
+  color: var(--light);
+  background-color: var(--dark);
+}
+
+body{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+  background-color: var(--primary) ;
+  color: var(--secondary);
+  }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--dark);
+    background-color: var(--light);
+  }
+
+  header {
+  background-color: var(--secondary) ;
+  color: var(--primary);
+  }
+
+  button:hover {
+    background-color: var(--primary);
+    color: #747bff;
+  }
+  button {
+    color: var(--light);
+    border: none;
+  }
+}
